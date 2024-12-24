@@ -10,7 +10,14 @@ from swarm_models import OpenAIChat
 from swarms import Agent, create_file_in_folder
 from tickr_agent.main import TickrAgent
 
+from dotenv import load_dotenv
+
 # from autohedge.crypto_agent_wrapper import CryptoAgentWrapper
+
+load_dotenv(".env")
+
+print(os.getenv("OPENAI_API_KEY"))
+print("000")
 
 model = OpenAIChat(
     model_name="gpt-4o", openai_api_key=os.getenv("OPENAI_API_KEY")

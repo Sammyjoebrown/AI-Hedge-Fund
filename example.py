@@ -1,5 +1,10 @@
 # Example usage
 from autohedge.main import AutoFund
+from dotenv import load_dotenv
+
+# Load the environment variables
+load_dotenv()
+print("Environment variables loaded successfully.")
 
 # Define the stocks to analyze
 stocks = ["NVDA"]
